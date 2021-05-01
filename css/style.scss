@@ -1,0 +1,80 @@
+$light-cornflower-blue : #8ecae6;
+$blue-green : #219ebc;
+$prussian-blue : #023047;
+$honey-yellow : #ffb703;
+$orange: #fb8500;
+$white: #fff;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $prussian-blue;
+    color: $honey-yellow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100Vh;
+    margin: 0;
+    padding: 20px;
+}
+
+.btn {
+    color: $white;
+    background-color: $orange;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 16px;
+    padding: 8px;
+}
+
+
+.exchange-img {
+    width: 160px;
+}
+
+.currency{
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    select{
+        padding: 10px 10px;
+        width: 68px;
+        font-size: 20px;
+        appearance: none;
+        border: 1px solid $light-cornflower-blue;
+        
+    }
+
+    input {
+        background: transparent;
+        color: $white;
+        width: 240px;
+        padding: 10px 10px;
+        text-align: right;
+        font-size: 20px;
+    }
+}
+
+
+.swap-rate-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .rate{
+        font-size: 20px;
+        padding: 8px;
+    }
+}
+
+
+select:focus,
+input:focus,
+button:focus{
+    outline: 0;
+}
